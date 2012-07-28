@@ -4,7 +4,6 @@ SetScriptUseSettingPage(0)
 
 AddEventListener("OnRenderBackground", "OnRenderBackground")
 
-BackGround = TextureLoad("background.png")
 MicrobesImage = TextureLoad("microbes.png")
 FoodImage = TextureLoad("food.png")
 
@@ -83,7 +82,8 @@ function OnRenderBackground()
     mx, my = GetMousePosMenu()
     mx = mx / UiGetScreenWidth() * 300 * a
     my = my / UiGetScreenHeight() * 300
-    RenderTexture(BackGround, 0, 0, 300 * a, 300)
+    UiDirectRect(0, 0, 300 * a, 300, 0, 0, 0, 1, 0)
+    --RenderTexture(BackGround, 0, 0, 300 * a, 300)
     BlendAdditive()
 
     if (math.random(0, 50) == 1) then
