@@ -220,7 +220,7 @@ function Render()
                     else
                         Ui.Ratio[i] = UiDoLabel(x + 400, y + (i * 20), 45, 20, 0, round(PlayersSorted[i]["frags"]["all"] / PlayersSorted[i]["deaths"]["all"], 2), 14, -1, 0.5, 0.5, 0.5, 1)
                     end
-                    Ui.Fpm[i] = UiDoLabel(x + 450, y + (i * 20), 45, 20, 0, round(PlayersSorted[i]["frags"]["all"] / ((ActualTime - StartTime) / 600), 2), 14, -1, 0.5, 0.5, 0.5, 1)
+                    Ui.Fpm[i] = UiDoLabel(x + 450, y + (i * 20), 45, 20, 0, round(PlayersSorted[i]["frags"]["all"] / ((ActualTime - StartTime) / 60000), 2), 14, -1, 0.5, 0.5, 0.5, 1)
                     Ui.Hammer[i] = UiDoLabel(x + 500, y + (i * 20), 45, 20, 0, PlayersSorted[i]["frags"][0] .. "/" .. PlayersSorted[i]["deaths"][0], 14, 0, 0.5, 0.5, 0.5, 1)
                     Ui.Gun[i] = UiDoLabel(x + 550, y + (i * 20), 45, 20, 0, PlayersSorted[i]["frags"][1] .. "/" .. PlayersSorted[i]["deaths"][1], 14, 0, 0.5, 0.5, 0.5, 1)
                     Ui.Shotgun[i] = UiDoLabel(x + 600, y + (i * 20), 45, 20, 0, PlayersSorted[i]["frags"][2] .. "/" .. PlayersSorted[i]["deaths"][2], 14, 0, 0.5, 0.5, 0.5, 1)
@@ -240,7 +240,7 @@ function Render()
                     else
                         Ui.Ratio[i] = UiDoLabel(x + 400, y + (i * 20), 45, 20, 0, round(PlayersSorted[i]["frags"]["all"] / PlayersSorted[i]["deaths"]["all"], 2), 14, -1)
                     end
-                    Ui.Fpm[i] = UiDoLabel(x + 450, y + (i * 20), 45, 20, 0, round(PlayersSorted[i]["frags"]["all"] / ((ActualTime - StartTime) / 600), 2), 14, -1)
+                    Ui.Fpm[i] = UiDoLabel(x + 450, y + (i * 20), 45, 20, 0, round(PlayersSorted[i]["frags"]["all"] / ((ActualTime - StartTime) / 60000), 2), 14, -1)
                     Ui.Hammer[i] = UiDoLabel(x + 500, y + (i * 20), 45, 20, 0, PlayersSorted[i]["frags"][0] .. "/" .. PlayersSorted[i]["deaths"][0], 14, 0)
                     Ui.Gun[i] = UiDoLabel(x + 550, y + (i * 20), 45, 20, 0, PlayersSorted[i]["frags"][1] .. "/" .. PlayersSorted[i]["deaths"][1], 14, 0)
                     Ui.Shotgun[i] = UiDoLabel(x + 600, y + (i * 20), 45, 20, 0, PlayersSorted[i]["frags"][2] .. "/" .. PlayersSorted[i]["deaths"][2], 14, 0)
